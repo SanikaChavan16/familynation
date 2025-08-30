@@ -7,7 +7,7 @@ export default function WorkBoundaries() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/work-boundaries")
+      .get(`${import.meta.env.VITE_API_URL}/api/work-boundaries`)
       .then((res) => setTips(res.data))
       .catch((err) => console.error(err));
   }, []);

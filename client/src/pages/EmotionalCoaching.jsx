@@ -7,7 +7,7 @@ export default function EmotionalCoaching() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/emotional-coaching")
+      .get(`${import.meta.env.VITE_API_URL}/api/emotional-coaching`)
       .then((res) => setModules(res.data))
       .catch((err) => console.error(err));
   }, []);

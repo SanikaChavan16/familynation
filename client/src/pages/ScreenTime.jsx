@@ -8,7 +8,7 @@ export default function ScreenTimeBalance() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/screen-time")
+      .get(`${import.meta.env.VITE_API_URL}/api/screen-time`)
       .then((res) => setStrategies(res.data))
       .catch((err) => console.error(err));
   }, []);

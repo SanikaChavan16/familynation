@@ -10,7 +10,7 @@ export default function OnDemandSupport() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/experts")
+      .get(`${import.meta.env.VITE_API_URL}/api/experts`)
       .then((res) => setExperts(res.data))
       .catch((err) => console.error(err));
   }, []);

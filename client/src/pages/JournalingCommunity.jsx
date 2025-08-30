@@ -8,7 +8,7 @@ export default function JournalingCommunity() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/journals")
+      .get(`${import.meta.env.VITE_API_URL}/api/journals`)
       .then((res) => setEntries(res.data))
       .catch((err) => console.error(err));
   }, []);

@@ -9,7 +9,7 @@ export default function ConflictResolution() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/conflict-resolution")
+      .get(`${import.meta.env.VITE_API_URL}/api/conflict-resolution`)
       .then((res) => setStrategies(res.data))
       .catch((err) => console.error(err));
   }, []);

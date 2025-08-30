@@ -9,7 +9,7 @@ export default function ChildcareOptions() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/childcare/${selectedCity}`)
+      .get(`${import.meta.env.VITE_API_URL}/api/childcare/${selectedCity}`)
       .then((res) => setProviders(res.data))
       .catch((err) => console.error(err));
   }, [selectedCity]);

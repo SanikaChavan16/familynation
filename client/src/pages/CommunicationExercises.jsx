@@ -9,7 +9,7 @@ export default function CommunicationExercises() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/exercises")
+      .get(`${import.meta.env.VITE_API_URL}/api/exercises`)
       .then((res) => setExercises(res.data))
       .catch((err) => console.error(err));
   }, []);

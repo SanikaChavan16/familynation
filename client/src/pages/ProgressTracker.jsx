@@ -18,7 +18,7 @@ export default function ProgressTracker() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/progress")
+      .get(`${import.meta.env.VITE_API_URL}/api/progress`)
       .then((res) => setProgress(res.data))
       .catch((err) => console.error(err));
   }, []);

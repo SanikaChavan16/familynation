@@ -11,7 +11,7 @@ export default function TimeManagement() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/tasks")
+      .get(`${import.meta.env.VITE_API_URL}/api/tasks`)
       .then((res) => setTasks(res.data))
       .catch((err) => console.error(err));
   }, []);
