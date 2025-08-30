@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "title": "Breakfast Choice Calm-Down",
+    "age_group": "5-12",
+    "duration": "5 min",
+    "steps": [
+      "Pause together: 3 deep breaths as a family.",
+      "Name the problem in one sentence: “We have different breakfast choices.”",
+      "Turn-taking: each child gets 30 seconds to share their choice without interruption.",
+      "Reflect back one feeling you heard from each child.",
+      "Offer two-win options (rotate choices on alternate days or mix-and-match sides).",
+      "Agree, high-five, and move on."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Feelings First, Fix Later",
+    "age_group": "6-14",
+    "duration": "4 min",
+    "steps": [
+      "Ask: “What happened?” then “How did that feel?”",
+      "Validate: “It makes sense you feel that way.”",
+      "Ask: “What would make this morning easier for you?”",
+      "Pick one small step you all agree to try today."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Two-Choices Morning Reset",
+    "age_group": "4-10",
+    "duration": "3 min",
+    "steps": [
+      "State boundary calmly: “We need to leave in 15 minutes.”",
+      "Offer two choices: e.g., “Oats with banana” or “Toast with peanut butter.”",
+      "If disagreement continues, use timer for 60 seconds of quiet thinking.",
+      "After timer, choose option; appreciate cooperation."
+    ]
+  }
+]

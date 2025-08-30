@@ -1,0 +1,44 @@
+/* Import Bootstrap */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Custom global overrides */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8f9fa; /* Bootstrap light background */
+  color: #212529;      /* Bootstrap text color */
+}
+
+/* Optional custom tweaks */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #5a67d8, #6b46c1);
+}
+
+/* Custom card style to look modern */
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
